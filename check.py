@@ -25,6 +25,8 @@ testData = (testData - means) / stds
 accuracyModel = diabetesLoadedModel.score(testData, testLabel)
 print("accuracy = ", accuracyModel * 100, "%")
 
+# Accuracy will be same if model was saved and loaded correctly. It is 78%
+
 # Validation data that has not been tested before
 sampleData = dfCheck[:1]
 
